@@ -1,0 +1,57 @@
+.projectsGallery {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsGallery .projectCard {
+    padding: 0.1rem;
+    text-align: center;
+}
+
+.projects-1-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    height: 60%;
+}
+
+.projects-1-2 .projectCard {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.projects-sideProject1-sideProject2-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+}
+
+.projects-sideProject1-sideProject2-5 .projectCard {
+    width: 80%;
+    height: 150px;
+}
+
+.projects-sideProject1-sideProject2-5 :nth-child(2) {
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.projects-3-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+}
+
+.projects-3-4 .projectCard {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
