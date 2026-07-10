@@ -33,15 +33,24 @@
     width: 60%;
 }
 
-.projects-sideProject1-sideProject2-5 .projectCard {
+.projects-sideProject1-sideProject2-5 a {
     width: 80%;
-    height: 150px;
+
+    & .projectCard {
+        width: 100%;
+        height: 150px;
+    }
 }
 
 .projects-sideProject1-sideProject2-5 :nth-child(2) {
+
     width: 90%;
-    height: 250px;
-    border-radius: 20px;
+
+    & .projectCard {
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+    }
 }
 
 .projects-3-4 {
