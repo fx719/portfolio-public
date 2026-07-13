@@ -64,4 +64,34 @@
     }
 }
 
-@media (max-width:1365px) {}
+@media (max-width:1000px) {
+    .projectsGallery {
+        flex-direction: column;
+    }
+
+    .side_projects {
+        flex-direction: row;
+        flex-grow: 2;
+    }
+
+    .gh_pages_oc_projects {
+        flex-direction: row;
+        flex-grow: 1;
+
+        & .projectCard {
+            width: 33%;
+            height: 100%;
+        }
+    }
+
+    .gh_code_oc_only {
+        flex-direction: row;
+        flex-grow: 1;
+
+        & .projectCard {
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+}
