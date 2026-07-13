@@ -2,9 +2,19 @@
 
     display: flex;
     flex-direction: column;
-    background-size: 95%;
+
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: cover;
+
+    /* credits to https://css.glass/ */
+    background-color: rgba(113, 255, 238, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(113, 255, 238, 0.3);
+    /* credits to https://css.glass/ */
+
+    background-blend-mode: color;
+    padding: 0.1em;
+
     justify-content: flex-end;
     align-items: center;
     font-size: 0.9rem;
@@ -17,17 +27,39 @@
     }
 }
 
-.glass_cover {
-    /* credits to https://css.glass/  */
-    background: rgba(113, 255, 238, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(113, 255, 238, 0.3);
-    /* credits to https://css.glass/  */
-    z-index: 1;
-    height: 100%;
+.project_img {
     width: 100%;
-    position: absolute;
+    height: 100%;
+
+    & a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
 }
+
+
+
+.project_name_and_stack {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
 
 .stack {
 
@@ -45,17 +77,19 @@
 
 }
 
-.project_name_and_stack {
-    display: flex;
-    gap: 0.6rem;
-    justify-content: space-between;
-    border-top: 1px solid black;
-    width: 100%;
+.github_code_link {
+    font-style: italic;
 }
 
 
 @media (max-width:1347px) {
     .project_name_and_stack {
         flex-direction: column;
+    }
+
+    .github_code_link {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
     }
 }

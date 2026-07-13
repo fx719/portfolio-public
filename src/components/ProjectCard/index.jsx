@@ -1,17 +1,21 @@
 import "./ProjectCard.css"
 
-export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack }) {
+export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack, codeLink }) {
 
     return (
-        <>
-            <a target="_blank" href={projectUrl} className="projectCard" style={{ backgroundImage: `url(${backgroundImgUrl})` }}>
-                <div className="project_name_and_stack">
-                    <h3 className="projectName">{projectName}</h3>
-                    <div className="stack"><ul>{projectStack.map(tech => <li key={projectStack.indexOf(tech)}>{tech}</li>)}</ul></div>
-                </div>
-                <div className="glass_cover">
-                </div>
-            </a>
-        </>
+        <div className="projectCard">
+            <div className="project_img">
+                <a target="_blank" href={projectUrl} >
+                    <img src={backgroundImgUrl} alt={`image du projet ${projectName}`} />
+                </a>
+            </div>
+            <div className="project_name_and_stack">
+                <h3 className="projectName">{projectName}</h3>
+                <div className="stack"><ul>{projectStack.map(tech => <li key={projectStack.indexOf(tech)}>{tech}</li>)}</ul></div>
+            </div>
+            <div className="github_code_link">
+                <a target="_blank" href={codeLink}>Lien vers le code GitHub</a>
+            </div>
+        </div>
     )
 }
