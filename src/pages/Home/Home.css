@@ -49,3 +49,19 @@
         height: 50%;
     }
 }
+
+
+@media (max-width:1756px) {
+    .projectCard {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width:1645px) {
+    .projectCard {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:1365px) {}

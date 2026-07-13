@@ -12,11 +12,11 @@ export default function Home() {
     return (
         <div className="projectsGallery">
             <div className="side_projects">
-                <ProjectCard projectName="Homemade Sutom (projet personnel, version de démonstration)" backgroundImgUrl={logoHomemadeSutom} projectStack={stacks.homemadeSutom} />
+                <ProjectCard projectName="Homemade Sutom (projet personnel, démo)" backgroundImgUrl={logoHomemadeSutom} projectStack={stacks.homemadeSutom} />
             </div>
             <div className="gh_pages_oc_projects">
                 <ProjectCard projectUrl="https://fx719.github.io/booki/" projectName="Site statique de location immobilière" backgroundImgUrl={bookiLogo} projectStack={stacks.booki} />
-                <ProjectCard projectUrl="https://fx719.github.io/Nina-Carducci-Dev-master/" projectName="Optimisation portfolio de photographe" backgroundImgUrl={carducciLogo} projectStack={stacks.ninaCarducci} />
+                <ProjectCard projectUrl="https://fx719.github.io/Nina-Carducci-Dev-master/" projectName="Optimisation d'un portfolio" backgroundImgUrl={carducciLogo} projectStack={stacks.ninaCarducci} />
                 <ProjectCard projectUrl="https://github.com/fx719/kasa" projectName="SPA de location immobilière" backgroundImgUrl={kasaLogo} projectStack={stacks.kasa} />
             </div>
             <div className="gh_code_oc_only">
