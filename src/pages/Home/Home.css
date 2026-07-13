@@ -95,3 +95,44 @@
     }
 
 }
+
+
+@media (max-width:359px) {
+
+
+
+
+    .side_projects {
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .gh_pages_oc_projects {
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+
+        & .projectCard {
+            width: 33%;
+            height: 100%;
+        }
+    }
+
+    .gh_code_oc_only {
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+
+        & .projectCard {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}

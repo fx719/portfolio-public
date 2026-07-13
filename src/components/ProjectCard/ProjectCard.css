@@ -93,3 +93,17 @@
         width: 100%;
     }
 }
+
+@media (max-width:359px) {
+    .projectCard {
+        font-size: 0.4rem;
+
+        & a {
+            font-size: 0.4rem;
+        }
+    }
+
+    .github_code_link {
+        margin-top: 0.1rem;
+    }
+}

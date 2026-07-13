@@ -2,3 +2,9 @@ main {
     height: calc(100vh - 120px);
     margin-top: 2rem;
 }
+
+@media (max-width:359px) {
+    main {
+        margin-top: 0.5rem;
+    }
+}

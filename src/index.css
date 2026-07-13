@@ -22,3 +22,47 @@ a {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width:950px) {
+    body {
+        margin-inline: 150px;
+    }
+}
+
+
+@media (max-width:639px) {
+    body {
+        margin-inline: 100px;
+    }
+}
+
+@media (max-width:545px) {
+    body {
+        margin-inline: 50px;
+    }
+}
+
+@media (max-width:445px) {
+    body {
+        margin-inline: 25px;
+    }
+}
+
+@media (max-width:384px) {
+    body {
+        margin-inline: 12.5px;
+    }
+}
+
+@media (max-width:358px) {
+    body {
+        margin-inline: 0px;
+    }
+
+}
+
+@media (max-width:340px) {
+    main {
+        width: 80%;
+    }
+}

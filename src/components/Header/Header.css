@@ -6,3 +6,19 @@ header {
     border-bottom: 1px solid black;
     height: 120px;
 }
+
+
+@media(max-width:339px) {
+    header {
+        width: 80%;
+        justify-content: center;
+
+        & h2 {
+            margin: 0;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+}
