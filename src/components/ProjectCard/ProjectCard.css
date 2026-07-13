@@ -2,16 +2,29 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.623);
-    background-blend-mode: color;
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
     justify-content: flex-end;
     align-items: center;
+    font-size: 0.9rem;
+    position: relative;
 
     & .projectName {
-        color: lightcyan;
+        color: black;
 
     }
+}
+
+.glass_cover {
+    /* credits to https://css.glass/  */
+    background: rgba(198, 241, 255, 0.41);
+    border-radius: 16px;
+    box-shadow: 1px 4px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(198, 241, 255, 0.52);
+    /* credits to https://css.glass/  */
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
