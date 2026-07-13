@@ -3,4 +3,6 @@ header {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
+    border-bottom: 1px solid black;
+    height: 120px;
 }
