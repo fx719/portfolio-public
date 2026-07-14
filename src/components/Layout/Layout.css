@@ -1,6 +1,6 @@
 main {
     height: calc(100vh - 120px);
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 @media (max-width:359px) {
