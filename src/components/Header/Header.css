@@ -30,3 +30,19 @@ header {
         }
     }
 }
+
+@media (max-width:400px) {
+    header {
+
+
+        & h2 {
+            font-size: 0.8rem;
+            font-weight: bolder;
+        }
+
+        & p {
+            font-size: 0.6rem;
+        }
+
+    }
+}
