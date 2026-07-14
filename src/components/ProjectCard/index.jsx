@@ -4,9 +4,8 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
 
     return (
         <div className="projectCard">
-            <div className="project_img">
-                <a target="_blank" href={projectUrl} >
-                    <img src={backgroundImgUrl} alt={`image du projet ${projectName}`} />
+            <div className="project_img"  >
+                <a target="_blank" href={projectUrl} style={{ backgroundImage: `url(${backgroundImgUrl})` }}>
                 </a>
             </div>
             <div className="project_name_and_stack">
