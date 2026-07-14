@@ -10,6 +10,7 @@
     /* credits to https://css.glass/ */
 
     background-blend-mode: color;
+    border-radius: 10px;
     padding: 0.1em;
     justify-content: flex-start;
 
