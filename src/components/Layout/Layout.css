@@ -8,3 +8,10 @@ main {
         margin-top: 0.5rem;
     }
 }
+
+
+@media (max-width:346px) {
+    .layout {
+        width: 90%;
+    }
+}
