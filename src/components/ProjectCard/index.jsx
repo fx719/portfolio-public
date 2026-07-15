@@ -5,7 +5,8 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
     return (
         <div className="projectCard">
             <div className="project_img"  >
-                <a target="_blank" href={projectUrl} style={{ backgroundImage: `url(${backgroundImgUrl})` }}>
+                <a target="_blank" href={projectUrl} style={{ backgroundImage: `url(${backgroundImgUrl})` }} aria-label="">
+                    <span className="sr-only">Visit {projectUrl}</span>
                 </a>
             </div>
             <div className="project_name_and_stack">

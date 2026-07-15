@@ -11,7 +11,7 @@
 
     background-blend-mode: color;
     border-radius: 10px;
-    padding: 0.1em;
+    padding: 0.5em;
     justify-content: flex-start;
 
     font-size: 0.9rem;
@@ -79,7 +79,17 @@
     font-style: italic;
 }
 
-
+/* hides the tag from a regular user, but allows screen readers to see it. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 
 
