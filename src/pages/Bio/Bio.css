@@ -1,0 +1,39 @@
+.bio_content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.bio_text {
+    & p {
+        margin-top: 1rem;
+    }
+}
+
+.bio_profile_picture {
+    & img {
+        border-radius: 60px;
+    }
+}
+
+@media(max-width:1333px) {
+    .bio_content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:789px) {
+    .bio_text {
+        & p {
+            font-size: 0.9rem;
+        }
+    }
+
+    .bio_profile_picture {
+        & img {
+            width: 70%;
+        }
+    }
+}
