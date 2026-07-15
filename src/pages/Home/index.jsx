@@ -11,7 +11,7 @@ import stacks from "../../data/stacks.js"
 export default function Home() {
     return (
         <div className="projectsGallery">
-            <ProjectCard projectName="Homemade Sutom (projet personnel)" backgroundImgUrl={logoHomemadeSutom} projectStack={stacks.homemadeSutom} />
+            <ProjectCard projectUrl="https://fx719.github.io/homemadeSUTOMDemoJS/" projectName="Homemade Sutom (projet personnel)" backgroundImgUrl={logoHomemadeSutom} projectStack={stacks.homemadeSutom} codeLink="https://github.com/fx719/homemadeSUTOMDemoJS" />
             <ProjectCard projectUrl="https://fx719.github.io/booki/" projectName="Site statique de location immobilière" backgroundImgUrl={bookiLogo} projectStack={stacks.booki} codeLink="https://github.com/fx719/booki" />
             <ProjectCard projectUrl="https://fx719.github.io/Nina-Carducci-Dev-master/" projectName="Optimisation d'un portfolio" backgroundImgUrl={carducciLogo} projectStack={stacks.ninaCarducci} codeLink="https://github.com/fx719/Nina-Carducci-Dev-master" />
             <ProjectCard projectUrl="https://github.com/fx719/kasa" projectName="SPA de location immobilière" backgroundImgUrl={kasaLogo} projectStack={stacks.kasa} codeLink="https://github.com/fx719/kasa" />
