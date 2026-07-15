@@ -4,9 +4,9 @@
     flex-direction: column;
 
     /* credits to https://css.glass/ */
-    background-color: rgba(113, 255, 238, 0.2);
+    background: rgba(0, 210, 250, 0.34);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(113, 255, 238, 0.3);
+    border: 1px solid rgba(0, 210, 250, 0.3);
     /* credits to https://css.glass/ */
 
     background-blend-mode: color;
