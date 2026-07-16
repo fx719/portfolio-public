@@ -4,6 +4,7 @@ import { useRef } from "react"
 export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack, projectDescription, projectModalPictures, codeLink }) {
 
     const modalRef = useRef(null)
+    const zoomedPictureRef = useRef(null)
 
     const openModal = () => {
         modalRef.current?.showModal()
@@ -11,6 +12,15 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
 
     const closeModal = () => {
         modalRef.current?.close()
+    }
+
+    const openZoomedPicture = (clickedPictureSrc) => {
+        zoomedPictureRef.current?.showModal()
+        console.log(zoomedPictureRef.current.lastChild.src)
+        zoomedPictureRef.current.lastChild.src = clickedPictureSrc
+    }
+    const closeZoomedPicture = () => {
+        zoomedPictureRef.current?.close()
     }
 
     return (
@@ -31,9 +41,12 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
                     <p>{projectDescription}</p>
                 </div>
                 <div className="modal_gallery">
-                    {projectModalPictures.map(picturePath => <div className="modal_gallery_img" style={{ backgroundImage: `url(${picturePath})` }} key={projectModalPictures.indexOf(picturePath)}></div>)}
-
+                    {projectModalPictures.map(picturePath => <img src={picturePath} alt={`screenshot du projet ${projectName}`} className="modal_gallery_img" key={projectModalPictures.indexOf(picturePath)} onClick={(e) => openZoomedPicture(e.currentTarget.src)} />)}
                 </div>
+            </dialog>
+            <dialog className="picture_modal_zoom" ref={zoomedPictureRef} closedby="any">
+                <button className="close_modal_button" onClick={closeZoomedPicture}>Revenir au projet</button>
+                <img className="zoomed_picture" ></img>
             </dialog>
 
             <div className="github_code_link">
