@@ -1,6 +1,17 @@
 import "./ProjectCard.css"
+import { useRef } from "react"
 
-export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack, codeLink }) {
+export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack, projectDescription, codeLink }) {
+
+    const modalRef = useRef(null)
+
+    const openModal = () => {
+        modalRef.current?.showModal()
+    }
+
+    const closeModal = () => {
+        modalRef.current?.close()
+    }
 
     return (
         <div className="projectCard">
@@ -13,6 +24,19 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
                 <h3 className="projectName">{projectName}</h3>
                 <div className="stack"><ul>{projectStack.map(tech => <li key={projectStack.indexOf(tech)}>{tech}</li>)}</ul></div>
             </div>
+            <button className="show_modal_button" onClick={openModal} >En savoir plus ...</button>
+            <dialog ref={modalRef} className="project_modal" closedby="any" >
+                <button className="close_modal_button" onClick={closeModal}>Revenir au portfolio</button>
+                <div className="modal_project_img" style={{ backgroundImage: `url(${backgroundImgUrl})` }} >
+                </div>
+                <div className="project_description">
+                    <p>{projectDescription}</p>
+                </div>
+                <div className="modal_gallery">
+
+                </div>
+            </dialog>
+
             <div className="github_code_link">
                 <a target="_blank" href={codeLink}>Lien vers le code GitHub</a>
             </div>
