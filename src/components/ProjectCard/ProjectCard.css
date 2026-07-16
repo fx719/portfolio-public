@@ -184,11 +184,22 @@
     .modal_gallery {
         gap: 0.5rem;
     }
+
+    .zoomed_picture {
+        aspect-ratio: 1/1;
+    }
+
 }
 
 @media (max-width:1180px) {
     .projectCard {
         font-size: 0.7rem;
+    }
+}
+
+@media(max-width:1228px) {
+    .zoomed_picture {
+        height: auto;
     }
 }
 
@@ -202,21 +213,48 @@
         row-gap: 0.2rem;
         grid-template-columns: minmax(0, 540px);
     }
+
+    .picture_modal_zoom {
+        width: 70%;
+    }
 }
 
+@media(max-width:1065px) {
+    .zoomed_picture {
+        height: auto;
+    }
 
+    .picture_modal_zoom {
+        width: 80%;
+    }
+}
 
 @media (max-width:1000px) {
     .projectCard {
         font-size: 0.9rem;
     }
+
+    .picture_modal_zoom {
+        height: 88vh;
+    }
+}
+
+@media(max-width:900px) {
+    .picture_modal_zoom {
+        width: 90%;
+    }
 }
 
 @media(max-width:800px) {
+
     .close_modal_button {
         text-align: center;
         font-size: 0.5rem;
         width: 50%;
+    }
+
+    .picture_modal_zoom {
+        width: 80vh;
     }
 }
 
@@ -230,6 +268,14 @@
     }
 }
 
+
+@media(max-width:713px) {
+    .picture_modal_zoom {
+        height: 70vh;
+        width: 100%;
+    }
+}
+
 @media(max-width:645px) {
     .project_modal {
         width: 80%;
@@ -239,6 +285,10 @@
 @media(max-width:540px) {
     .project_modal {
         width: 90%;
+    }
+
+    .picture_modal_zoom {
+        height: 65vh;
     }
 
 }
@@ -255,6 +305,17 @@
     .modal_gallery img {
         height: auto;
         aspect-ratio: 1/1;
+    }
+
+    .picture_modal_zoom {
+        height: 50vh;
+    }
+}
+
+
+@media(max-width:382px) {
+    .picture_modal_zoom {
+        height: 40vh;
     }
 }
 
