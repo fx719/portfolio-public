@@ -1,5 +1,5 @@
 
-const pathPrefix = "src/assets/projectPictures/"
+const pathPrefix = "/assets/projectPictures/"
 
 const projectsPicturesPaths = {
     booki: [pathPrefix + "Booki/booki_1.webp", pathPrefix + "Booki/booki_2.webp", pathPrefix + "Booki/booki_3.webp"],

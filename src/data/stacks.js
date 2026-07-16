@@ -1,5 +1,5 @@
 
-const pathPrefix = "src/assets/techPictures/"
+const pathPrefix = "/assets/techPictures/"
 
 const stacks = {
     booki: [pathPrefix + "html5-brands-solid-full.svg", pathPrefix + "css-brands-solid-full.svg"],
