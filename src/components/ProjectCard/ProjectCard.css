@@ -114,14 +114,27 @@
     gap: 1rem
 }
 
-.modal_project_img {
-    height: 30%;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+
+
+
+.modal_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    width: 100%
 }
 
+.modal_gallery_img {
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .project_modal::backdrop {
     background-color: rgba(0, 0, 0, 0.822);

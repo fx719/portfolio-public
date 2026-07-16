@@ -1,7 +1,7 @@
 import "./ProjectCard.css"
 import { useRef } from "react"
 
-export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack, projectDescription, codeLink }) {
+export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl, projectStack, projectDescription, projectModalPictures, codeLink }) {
 
     const modalRef = useRef(null)
 
@@ -27,12 +27,11 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
             <button className="show_modal_button" onClick={openModal} >En savoir plus ...</button>
             <dialog ref={modalRef} className="project_modal" closedby="any" >
                 <button className="close_modal_button" onClick={closeModal}>Revenir au portfolio</button>
-                <div className="modal_project_img" style={{ backgroundImage: `url(${backgroundImgUrl})` }} >
-                </div>
                 <div className="project_description">
                     <p>{projectDescription}</p>
                 </div>
                 <div className="modal_gallery">
+                    {projectModalPictures.map(picturePath => <div className="modal_gallery_img" style={{ backgroundImage: `url(${picturePath})` }} key={projectModalPictures.indexOf(picturePath)}></div>)}
 
                 </div>
             </dialog>
