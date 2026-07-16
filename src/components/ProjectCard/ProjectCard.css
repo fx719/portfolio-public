@@ -65,19 +65,18 @@
 
 .stack {
 
-    & ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 0.2rem;
-    }
-
-    & li {
-        list-style: none;
-        padding: 0;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
 }
+
+.stack .tech_icon {
+    width: 40px;
+    height: 40px;
+
+}
+
 
 
 .show_modal_button {

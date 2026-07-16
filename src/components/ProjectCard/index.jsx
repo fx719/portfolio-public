@@ -32,7 +32,7 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
             </div>
             <div className="project_name_and_stack">
                 <h3 className="projectName">{projectName}</h3>
-                <div className="stack"><ul>{projectStack.map(tech => <li key={projectStack.indexOf(tech)}>{tech}</li>)}</ul></div>
+                <div className="stack">{projectStack.map(techIconSrc => <img src={techIconSrc} alt="icone de langage informatique" key={projectStack.indexOf(techIconSrc)} className="tech_icon" />)}</div>
             </div>
             <button className="show_modal_button" onClick={openModal} >En savoir plus ...</button>
             <dialog ref={modalRef} className="project_modal" closedby="any" >
