@@ -4,18 +4,20 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     border-bottom: 1px solid lightcyan;
-    height: 120px;
+    height: auto;
+}
+
+
+#linkedin {
+    color: lightcyan;
+}
+
+.header-name {
+    padding-bottom: 0.5em;
 }
 
 
 
-
-
-@media (max-width:1434px) {
-    header {
-        height: auto;
-    }
-}
 
 @media (max-width:1151px) {
     header {
