@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header>
             <div className="header-name">
-                <NavLink to="/"><h2>Frédéric Dupont</h2></NavLink>
+                <NavLink to="/"><h2>Frédéric Dupont (acceuil)</h2></NavLink>
                 <NavLink to="/bio"><p>À propos</p></NavLink>
                 <a href="https://www.linkedin.com/in/fredericdupont75/" id='linkedin'>Contact</a>
             </div>
