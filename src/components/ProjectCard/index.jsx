@@ -118,7 +118,7 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
                 focusableElements[index].focus()
             }}>
                 <button className="close_modal_button" onClick={closeZoomedPicture}>Revenir au projet</button>
-                <img className="zoomed_picture" ></img>
+                <img className="zoomed_picture" alt={`image zoomée du projet ${projectName}`} />
             </dialog>
 
             <div className="github_code_link">
