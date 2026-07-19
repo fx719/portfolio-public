@@ -23,27 +23,20 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
 
 
     const openModal = () => {
-
         modalRef.current?.showModal()
-
         getFocusableElements(modalRef.current)
-
-
     }
 
     const closeModal = () => {
         modalRef.current?.close()
-
     }
 
     const openZoomedPicture = (clickedPictureSrc) => {
         zoomedPictureRef.current?.showModal()
-
-
         getFocusableElements(zoomedPictureRef.current)
-
         zoomedPictureRef.current.lastChild.src = clickedPictureSrc
     }
+
     const closeZoomedPicture = () => {
         zoomedPictureRef.current?.close()
         modalRef.current?.showModal()
@@ -53,13 +46,14 @@ export default function ProjectCard({ projectUrl, projectName, backgroundImgUrl,
     return (
         <div className="projectCard">
             <div className="project_img"  >
-                <a target="_blank" href={projectUrl} style={{ backgroundImage: `url(${backgroundImgUrl})` }} >
+                <a target="_blank" href={projectUrl} style={{ backgroundImage: `url(${backgroundImgUrl})` }} aria-label={`Visiter la page du projet : ${projectName}`} >
+                    <img src={backgroundImgUrl} alt={`Aperçu du projet ${projectName}`} className="sr-only" />
                     <span className="sr-only">Visit {projectUrl}</span>
                 </a>
             </div>
             <div className="project_name_and_stack">
                 <h3 className="projectName">{projectName}</h3>
-                <div className="stack">{projectStack.map(techIconSrc => <img src={techIconSrc} alt="icone de langage informatique" key={projectStack.indexOf(techIconSrc)} className="tech_icon" />)}</div>
+                <div className="stack" aria-label={`Icones de technologies utilisées sur : ${projectName}`} >{projectStack.map(techIconSrc => <img src={techIconSrc} alt="" role="presentation" aria-hidden="true" key={projectStack.indexOf(techIconSrc)} className="tech_icon" />)}</div>
             </div>
             <button className="show_modal_button" onClick={openModal} >En savoir plus ...</button>
             <dialog ref={modalRef} className="project_modal" closedby="any" onKeyDown={(e) => {
